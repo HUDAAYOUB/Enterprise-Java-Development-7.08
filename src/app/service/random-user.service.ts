@@ -11,7 +11,4 @@ export class RandomUserService {
   getAllCharachter(): Observable<any>{
     return this.http.get<any>(this.API_URL)
   }
-  
-
- 
 }
