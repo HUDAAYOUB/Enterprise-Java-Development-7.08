@@ -1,0 +1,30 @@
+
+.character-item {
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .character-item h3 {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .character-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .character-details p {
+    margin: 5px 0;
+  }
+  
+  button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+  }
+  

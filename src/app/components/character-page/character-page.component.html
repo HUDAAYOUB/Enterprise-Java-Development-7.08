@@ -1,0 +1,14 @@
+<h1>Movie Characters List</h1>
+<div class="container">
+    <div *ngFor="let character of characterList; let i = index">
+        <div class="part1">
+            <p class="character">
+                {{character.name}}
+                <button (click)="showDetails(i)">Show Details</button>
+            </p>
+            <div *ngIf="i === selectedcharacter" class="part2">
+                <app-character-item [characterLists]="character" (deleteCharacterEvent)="deleteCharacter(i)"></app-character-item>
+            </div>
+        </div>
+    </div>
+</div>

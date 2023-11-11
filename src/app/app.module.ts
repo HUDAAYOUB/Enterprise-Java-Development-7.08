@@ -2,15 +2,24 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { CharacterItemComponent } from './components/character-item/character-item.component';
+import { CharacterPageComponent } from './components/character-page/character-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CharacterItemComponent,
+    CharacterPageComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+imports: [
+  BrowserModule,
+  FormsModule,
+  HttpClientModule,
+],
+providers: [],
+bootstrap: [AppComponent]
 })
 export class AppModule { }
